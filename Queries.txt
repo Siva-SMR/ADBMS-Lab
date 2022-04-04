@@ -1,6 +1,0 @@
-1. SELECT * FROM `movies` WHERE myear > 1997
-2. SELECT * FROM `movies` WHERE director='Hanson' and myear > 1997
-3. SELECT title, rating FROM `movies`
-4. SELECT actor AS "ACTORS and DIRECTORS" FROM actors UNION SELECT director FROM directors;
-5. SELECT * FROM acts a JOIN movies m ON a.title=m.title WHERE m.director='Coen' AND a.actor='McDormand'
-
