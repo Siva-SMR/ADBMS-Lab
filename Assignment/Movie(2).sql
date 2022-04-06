@@ -38,3 +38,9 @@ select * from RATING;
 
 
 SELECT Mov_Title FROM MOVIES JOIN  DIRECTOR where MOVIES.Dir_id = DIRECTOR.Dir_id and Dir_Name = 'Hitchcock' ;
+
+
+
+
+
+select  Act_Name from ACTOR join MOVIE_CAST on ACTOR.Act_id = MOVIE_CAST.Act_id join MOVIES on MOVIES.Mov_id = MOVIE_CAST.Mov_id where MOVIES.Mov_Year < 2000 OR MOVIES.Mov_Year > 2015;
