@@ -1,0 +1,14 @@
+use college
+
+db.createCollection("studlist")
+
+db.studlist.insert({"fname":"Ajil","lname":"k","grade":"A+","mark":"91","contact":8606713330,"gender":"male","department":"MCA","loc":"kollam"})
+.
+.
+.
+
+
+1. db.studlist.find({"gender":"female","department":"MCA"},{"fname":1,"lname":1,"mark":1,_id:0}).pretty()
+
+
+2. // db.studlist.aggregate([{$match:{"department":"MCA"}},{$group:{_id:0,"highest mark":{$max:"$mark"}}}]).pretty()
